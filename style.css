@@ -6,15 +6,16 @@
 
 header{
     display: flex;
-    background: rgb(248, 244, 186);
+    background: linear-gradient(90deg,black, rgb(165, 10, 10), gold);
     padding: 5px 0;
     }
 
 header img{
     width: 300px;
+    margin: 0 auto;
 }
 
-nav ul {
+#cabeçalho ul {
     list-style: none;
     position: absolute;
     right: 0;
@@ -22,3 +23,8 @@ nav ul {
     gap: 25px;
     margin: 15px;
     }
+#produto ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
