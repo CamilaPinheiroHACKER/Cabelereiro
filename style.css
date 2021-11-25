@@ -13,8 +13,8 @@ header{
 }
 header img{
     width: 500px;
-    left: 0;
-    right: 0;
+    /* left: 0;
+    right: 0; */
     margin: auto;
 }
 body{
@@ -28,11 +28,7 @@ ul {
     display: flex;
     list-style: none;
     font-size: 20px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+
 }
 a {
     display: flex;
@@ -59,8 +55,8 @@ a {
   }
   
 div:nth-child(1) {
-        background: rgba(238, 238, 238, 0.651);
-        box-shadow: 0 8px 8px -4px;
+    background: rgba(238, 238, 238, 0.651);
+    box-shadow: 0 8px 8px -4px;
 }
 div:nth-child(2) {
     background: rgba(238, 238, 238, 0.651);
@@ -74,7 +70,17 @@ div:nth-child(3) {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-}
+    }
+
+    @media only screen and (min-width: 480px) {
+        body {
+          width: 100%;
+          float: none;
+        }  
+
+      }
+      
+
 /* menu das paginas exceto home */
 
 #menus{
@@ -91,16 +97,22 @@ div:nth-child(3) {
     font-size: 16px;
     transition: all 300ms ease-in-out;
 }
-.flex {
-    display: flex;
-    justify-content: space-evenly;
+.gride {
+    display: grid;
+    padding: 15px;
     gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ 
 }
 
-.flex img {
+.gride img {
     max-width: 300px;
 }
 p{
+    font-family: 'Montserrat', sans-serif;
     width: 300px;
     text-align: center;
 }
@@ -108,5 +120,5 @@ h3{
     text-align: center;
 }
 button{
-    padding: 0 auto;
+    align-items: center;
 }
