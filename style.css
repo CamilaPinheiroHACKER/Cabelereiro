@@ -17,8 +17,10 @@ header img{
 }
 body{
     background-image: url("img/home.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed; 
+    background-size: cover;
 
 }
 #about {
