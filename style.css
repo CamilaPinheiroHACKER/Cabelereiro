@@ -14,6 +14,7 @@ header{
 header img{
     width: 500px;
     margin: auto;
+    border-radius: 5px;
 }
 body{
     background-image: url("img/home.jpg");
@@ -21,14 +22,6 @@ body{
     background-position: center center;
     background-attachment: fixed; 
     background-size: cover;
-
-}
-#about {
-    margin-left: 400px;
-}
-#about p {
-    max-width: 600px;
-    padding: 10px;
 }
 ul {
     display: flex;
@@ -57,11 +50,14 @@ a {
     display: flex;
     justify-content: space-evenly;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 780px) {
     body {
       width: 100%;
       float: none;
     }  
+    header{
+        width: 300px;
+    }
   }
 #menus a:hover{
     padding: 10px;
@@ -72,14 +68,17 @@ a {
 div:nth-child(1) {
     background: rgba(238, 238, 238, 0.651);
     box-shadow: 0 8px 8px -4px;
+    border-radius: 5px;
 }
 div:nth-child(2) {
     background: rgba(238, 238, 238, 0.651);
     box-shadow: 0 8px 8px -4px;
+    border-radius: 5px;
 }
 div:nth-child(3) {
     background: rgba(238, 238, 238, 0.651);
     box-shadow: 0 8px 8px -4px;
+    border-radius: 5px;
 }
 .flex {
     display: flex;
@@ -100,12 +99,39 @@ p{
     width: 300px;
     text-align: center;
 }
+#about {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+#about p {
+    max-width: 600px;
+    padding: 10px;
+    font-size: 25px;
+}
+#about a{
+    color: rgba(112, 17, 17, 0.781);
+    padding-left: 100px;
+    text-align: center;
+}
+#about a:hover{
+    font-size:25px ;
+    font-style: oblique;
+    color: rgba(63, 19, 19, 0.781);
+    transition: all 300ms ease-in-out;
+}
 h3{
     text-align: center;
 }
 button{
-    align-items: center;
     padding: 20px 50px;
     border: none;
+    border-radius: 5px;
     font-size: 20px;
+    margin-left: 60px;
+}
+button a:hover {
+    font-style: oblique;
+    color: rgba(112, 17, 17, 0.781);
+    transition: all 300ms ease-in-out;
 }
